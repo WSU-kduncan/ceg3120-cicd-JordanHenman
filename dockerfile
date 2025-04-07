@@ -1,6 +1,6 @@
 FROM
 
-RUN
+RUN npm install -g @angular/cli
 
 COPY
 
