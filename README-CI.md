@@ -21,7 +21,7 @@ Use some sort of shell such as WSL and type the command:
 
 Using this command will show installed images on your computer, since no images have been installed it will show up empty.
 
-![Images](/docker-image)
+![Images](images/docker-image)
 
 ### Manually Setting up a Container
 
