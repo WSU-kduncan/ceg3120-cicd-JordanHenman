@@ -25,9 +25,15 @@ Using this command will show installed images on your computer, since no images 
 
 ### Manually Setting up a Container
 
+
+
 ### Creating a Dockerfile and Building Images
 
+
+
 ### Dockerhub Repository
+
+
 
 My DockerHub Repo:
 
