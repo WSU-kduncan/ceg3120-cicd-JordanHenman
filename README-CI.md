@@ -4,6 +4,8 @@
 
 ### Docker Setup
 
+#### Installing Docker Desktop
+
 ### Manually Setting up a Container
 
 ### Creating a Dockerfile and Building Images
