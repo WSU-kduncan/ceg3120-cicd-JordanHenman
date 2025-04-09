@@ -38,3 +38,7 @@ Using this command will show installed images on your computer, since no images 
 My DockerHub Repo:
 
 [https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general](https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general)
+
+## Part 2
+
+## Part 3
