@@ -22,7 +22,9 @@ Using WSL I check if docker is installed using the following command:
         docker --version
 
 This command will list the current version of docker, it if lists a version then you have successfully installed docker.
+
 <br />
+
 My reference for installing Docker desktop: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
 My Reference for testing docker: [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
