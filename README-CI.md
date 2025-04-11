@@ -1,4 +1,4 @@
-# ceg3120-cicd-JordanHenman
+# Part 1
 
 ## Docker Setup
 
@@ -32,7 +32,7 @@ Guide for testing docker: [https://docs.docker.com/get-started/](https://docs.do
 
 ## Manually Setting up a Container
 
-The command I used to manually set up a docker container:
+To setup a Docker container for our specific use I used the following command:
 
         docker run -it -p 4200:4200 -v $(pwd)/angular-site:/app node:18-bullseye bash
         
@@ -48,9 +48,38 @@ node:18-bullseye - The Docker image being used which is Node.js 18 on Debian Bul
 
 bash - Starts a bash shell in the container.
 
-### Creating a Dockerfile and Building Images
 
+Once the container is running a few dependencies need installed to run the application:
 
+                cd /app
+                npm install
+                npm start
+
+## Creating a Dockerfile and Building Images
+
+Creating a Dockerfile to automatically create containers is a simple and efficent task.
+
+The following is my example Dockerfile that I used to create a container similar to the one we created in the previous step:
+
+        FROM node:18-bullseye
+
+        WORKDIR /app
+
+        COPY angular-site/ .
+
+        RUN npm install
+
+        CMD ["npm", "start"]
+
+FROM - The base image that is used for the container.
+
+WORKDIR - The working directory inside of the container.
+
+COPY - Copying over the site files we are going to host.
+
+RUN - Runs the install command to install Node.js dependencies.
+
+CMD - Runs npm start to start the Angular dev server.
 
 ## Dockerhub Repository
 
@@ -60,6 +89,6 @@ My DockerHub Repo:
 
 [https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general](https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general)
 
-## Part 2
+# Part 2
 
-## Part 3
+# Part 3
