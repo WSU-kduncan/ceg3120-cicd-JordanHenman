@@ -1,8 +1,6 @@
 # ceg3120-cicd-JordanHenman
 
-## Part 1
-
-### Docker Setup
+## Docker Setup
 
 #### Installing Docker Desktop
 
@@ -25,7 +23,7 @@ This command will list the current version of docker, it if lists a version then
 
 Guide for testing docker: [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
 
-### Manually Setting up a Container
+## Manually Setting up a Container
 
 The command I used to manually set up a docker container:
 
@@ -47,7 +45,7 @@ bash - Starts a bash shell in the container.
 
 
 
-### Dockerhub Repository
+## Dockerhub Repository
 
 
 
