@@ -63,6 +63,10 @@ Once the container is running a few dependencies need installed to run the appli
                 npm start
 <br />
 
+The resource I used for the docker run command was ChatGPT, I gave it the prompt "Run a container with the node:18-bullesye container image and configure it to run and server the Angular application in angular-site".
+
+The resource I used for the dependencies was Chatgpt, I gave the prompt "List me the dependencies i need to run Angular with".
+
 ## Creating a Dockerfile and Building Images
 
 Creating a Dockerfile to automatically create containers is a simple and efficent task.
@@ -90,6 +94,8 @@ RUN - Runs the install command to install Node.js dependencies.
 CMD - Runs npm start to start the Angular dev server.
 
 <br />
+
+The resource I used to create this Dockerfile was Chatgpt, I gave it the prompt "Generate me a dockerfile based off of the previous docker run command".
 
 ## Working with Dockerhub
 
@@ -130,6 +136,12 @@ You should now be logged in with your Dockerhub account.
 <br />
 
 My DockerHub Repo: [https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general](https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general)
+
+The resource I used for creating a repo was: [https://docs.docker.com/docker-hub/repos/](https://docs.docker.com/docker-hub/repos/)
+
+The resource I used for creating a PAT was: [https://docs.docker.com/docker-hub/access-tokens/](https://docs.docker.com/docker-hub/access-tokens/)
+
+The resource I used for command line login was: [https://docs.docker.com/engine/reference/commandline/login/](https://docs.docker.com/engine/reference/commandline/login/)
 
 # Part 2
 
