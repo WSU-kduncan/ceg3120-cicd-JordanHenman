@@ -29,6 +29,8 @@ My reference for installing Docker desktop: [https://docs.docker.com/get-docker/
 
 My Reference for testing docker: [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
 
+<br />
+
 ## Manually Setting up a Container
 
 To setup a Docker container for our specific use I used the following command:
