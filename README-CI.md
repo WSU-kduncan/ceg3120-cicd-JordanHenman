@@ -15,13 +15,12 @@
 
 It is recommended to use a bash shell for the next steps. A guide to installing WSL can be found here: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-
 Using WSL I check if docker is installed using the following command:
 
         docker --version
 
 This command will list the current version of docker, it if lists a version then you have successfully installed docker.
-
+<br />
 My reference for installing Docker desktop: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
 My Reference for testing docker: [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
@@ -31,10 +30,9 @@ My Reference for testing docker: [https://docs.docker.com/get-started/](https://
 To setup a Docker container for our specific use I used the following command:
 
         docker run -it -p 4200:4200 -v $(pwd)/angular-site:/app node:18-bullseye bash
+<br />
+Command Breakdown:
 
-
-
-        
 docker run - Starts a new Docker container from an image.
 
 -it - i Keeps STDIN open and t allows you to use a terminal inside of the container.
