@@ -9,8 +9,8 @@
 3. Select a downloader based off of your operating system.
 4. Once downloaded open "Docker Desktop Installer.exe".
 5. Navigate through the installer menu to install Docker Desktop.
-6. Once Installed launch Docker Desktop.\
-
+6. Once Installed launch Docker Desktop.
+\
 #### Testing if Docker is Installed
 
 It is recommended to use a bash shell for the next steps. A guide to installing WSL can be found here: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
