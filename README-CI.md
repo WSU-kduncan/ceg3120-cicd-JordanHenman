@@ -11,12 +11,6 @@
 5. Navigate through the installer menu to install Docker Desktop.
 6. Once Installed launch Docker Desktop.
 
-
-
-Guide I used to for this install: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
-
-
-
 #### Testing if Docker is Installed
 
 It is recommended to use a bash shell for the next steps. A guide to installing WSL can be found here: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
@@ -28,11 +22,9 @@ Using WSL I check if docker is installed using the following command:
 
 This command will list the current version of docker, it if lists a version then you have successfully installed docker.
 
+My reference for installing Docker desktop: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
-
-Guide for testing docker: [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
-
-
+My Reference for testing docker: [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
 
 ## Manually Setting up a Container
 
