@@ -54,12 +54,14 @@ node:18-bullseye - The Docker image being used which is Node.js 18 on Debian Bul
 
 bash - Starts a bash shell in the container.
 
+<br />
 
 Once the container is running a few dependencies need installed to run the application:
 
                 cd /app
                 npm install
                 npm start
+<br />
 
 ## Creating a Dockerfile and Building Images
 
@@ -87,13 +89,13 @@ RUN - Runs the install command to install Node.js dependencies.
 
 CMD - Runs npm start to start the Angular dev server.
 
+<br />
+
 ## Dockerhub Repository
 
+<br />
 
-
-My DockerHub Repo:
-
-[https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general](https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general)
+My DockerHub Repo: [https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general](https://hub.docker.com/repository/docker/jordanhenman/henman-ceg3120/general)
 
 # Part 2
 
