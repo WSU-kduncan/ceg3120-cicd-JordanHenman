@@ -15,7 +15,9 @@
 
 #### Testing if Docker is Installed
 
-It is recommended to use a bash shell for the next steps. A guide to installing WSL can be found here: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
+It is recommended to use a bash shell for the next steps. 
+
+A guide to installing WSL can be found here: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 Using WSL I check if docker is installed using the following command:
 
