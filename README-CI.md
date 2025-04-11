@@ -39,6 +39,7 @@ To setup a Docker container for our specific use I used the following command:
 
         docker run -it -p 4200:4200 -v $(pwd)/angular-site:/app node:18-bullseye bash
 <br />
+
 Command Breakdown:
 
 docker run - Starts a new Docker container from an image.
