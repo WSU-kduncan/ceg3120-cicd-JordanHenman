@@ -15,7 +15,9 @@ Guide I used to for this install: [https://docs.docker.com/get-docker/](https://
 
 #### Testing if Docker is Installed
 
-Use some sort of shell such as WSL and type the command:
+It is recommended to use a bash shell for the next steps. A guide to installing WSL can be found here: [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+Using WSL I check if docker is installed using the following command:
 
         docker --version
 
