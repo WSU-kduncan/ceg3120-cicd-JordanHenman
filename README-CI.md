@@ -102,6 +102,8 @@ CMD - Runs npm start to start the Angular dev server.
 
 Your Public repository is now created.
 
+<br />
+
 ### Creating & Using a PAT
 
 A personal access token, or PAT, is a way to authenticate to Dockerhub without using your password. This allows you to grant other users access to your repositories without giving them access to your account and password.
