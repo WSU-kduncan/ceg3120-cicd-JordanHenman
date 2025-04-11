@@ -12,7 +12,9 @@
 6. Once Installed launch Docker Desktop.
 
 
+
 Guide I used to for this install: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+
 
 
 #### Testing if Docker is Installed
@@ -27,7 +29,9 @@ Using WSL I check if docker is installed using the following command:
 This command will list the current version of docker, it if lists a version then you have successfully installed docker.
 
 
+
 Guide for testing docker: [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
+
 
 
 ## Manually Setting up a Container
@@ -35,6 +39,9 @@ Guide for testing docker: [https://docs.docker.com/get-started/](https://docs.do
 To setup a Docker container for our specific use I used the following command:
 
         docker run -it -p 4200:4200 -v $(pwd)/angular-site:/app node:18-bullseye bash
+
+
+
         
 docker run - Starts a new Docker container from an image.
 
