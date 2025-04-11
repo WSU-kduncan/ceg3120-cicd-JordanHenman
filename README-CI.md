@@ -91,7 +91,39 @@ CMD - Runs npm start to start the Angular dev server.
 
 <br />
 
-## Dockerhub Repository
+## Working with Dockerhub
+
+### Created a Public Repository
+
+1. Naviagte to [https://hub.docker.com/](https://hub.docker.com/).
+2. Sign in and you should immediately be taken to hub.docker.com/repositories/(your name)
+3. Click "Create a repository".
+4. Give your repository a name and select the public button.
+
+Your Public repository is now created.
+
+### Creating & Using a PAT
+
+A personal access token, or PAT, is a way to authenticate to Dockerhub without using your password. This allows you to grant other users access to your repositories without giving them access to your account and password.
+
+The steps to generate a PAT are as follows:
+
+1. Navigate to [https://app.docker.com/settings/personal-access-tokens](https://app.docker.com/settings/personal-access-tokens).
+2. Click "Generate new token".
+3. Give the token an accurate description and an expiration date if needed.
+4. Under Access permissions select "Read & Write".
+5. Select "Generate"
+
+Your PAT token has now been created and is ready for use.
+
+<br />
+
+Logging in with your PAT is simple and easy.
+
+1. Open your bash terminal and type "docker login"
+2. Enter your username and your PAT token to login.
+
+You should now be logged in with your Dockerhub account.
 
 <br />
 
