@@ -14,4 +14,4 @@ COPY anguar-site/ /app
 RUN npm install
 
 # Starting the app
-CMD
+CMD ["npm", "start"]
