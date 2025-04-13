@@ -58,9 +58,9 @@ bash - Starts a bash shell in the container.
 
 Once the container is running a few dependencies need installed to run the application:
 
-                cd /app
-                npm install
-                npm start
+        cd /app
+        npm install
+        npm start
 <br />
 
 The resource I used for the docker run command was ChatGPT, I gave it the prompt "Run a container with the node:18-bullesye container image and configure it to run and server the Angular application in angular-site".
