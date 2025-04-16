@@ -99,7 +99,7 @@ The resource I used to create this Dockerfile was Chatgpt, I gave it the prompt 
 
 ## Working with Dockerhub
 
-### Created a Public Repository
+### Creating a Public Repository
 
 1. Naviagte to [https://hub.docker.com/](https://hub.docker.com/).
 2. Sign in and you should immediately be taken to hub.docker.com/repositories/(your name)
@@ -122,7 +122,7 @@ The steps to generate a PAT are as follows:
 4. Under Access permissions select "Read & Write".
 5. Select "Generate"
 
-Your PAT token has now been created and is ready for use.
+Your PAT token has now been created and is ready for use. Using "Read & Write" as the permissions for the PAT should be perfect for our overall goals, this way you will have all the same permissions as if you logged in with your username and password.
 
 <br />
 
@@ -144,5 +144,27 @@ The resource I used for creating a PAT was: [https://docs.docker.com/docker-hub/
 The resource I used for command line login was: [https://docs.docker.com/engine/reference/commandline/login/](https://docs.docker.com/engine/reference/commandline/login/)
 
 # Part 2
+
+*Creating a PAT was already covered in part 1 of this project.*
+
+### Creating & Using Repository Secrets
+
+1. Navigate to your Github Repo.
+2. Go to Settings, Secrets and variables, and select Actions.
+3. Click "New repository secret".
+
+Two secrets need created to successfully authenticate with DockerHub.
+
+DOCKER_USERNAME
+
+*Enter your username for DockerHub.*
+
+DOCKER_TOKEN
+
+**Enter your PAT that you previously created.*
+
+<br>
+
+### Workflow Creation
 
 # Part 3
