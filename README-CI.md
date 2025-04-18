@@ -238,3 +238,16 @@ There you should see your application running.
 Resource I used for workflow testing: [https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflow-runs](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflow-runs)
 
 # Part 3
+
+### Project Goals & Tools Used
+
+The main goal of this project was to set up an automated Continous Integration pipeline using Actions from GitHub. These Actions build a Docker image whenever changes are pushed to the main branch, authenticates with DockerHub, and pushes the new image to our pubic DockerHub repository.
+
+The tools we used to complete our goals are as follows:
+
+- GitHub Actions
+  Used to
+- Docker
+- DockerHub
+- Git
+
