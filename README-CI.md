@@ -223,7 +223,7 @@ You can start and run your image with the following commands:
 
         docker pull your-dockerhub-username/your-repo-name:latest
 
-        docker run -p 8080:80 your-dockerhub-username/your-repo-name:latest
+        docker run -t-p 8080:80 your-dockerhub-username/your-repo-name:latest
 
 *Make sure to replace your-dockerhub-username/your-repo-name with your username and repo information.*
 
