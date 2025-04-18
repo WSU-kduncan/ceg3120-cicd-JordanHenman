@@ -253,9 +253,13 @@ The tools we used to complete our goals are as follows:
 - DockerHub - Used to host our Docker images.
 - Git - Used to track code changes.
 
+<br>
+
 ### Diagramming
 
+![diagram.png](diagram.png)
 
+<br>
 
 ### Resources
 
