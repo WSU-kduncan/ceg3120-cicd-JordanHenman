@@ -199,11 +199,17 @@ Another resource I used: [https://docs.github.com/en/actions/using-workflows/wor
 
 There is several ways to test if your workflow is valid and working correctly.
 
-Test 1: Push a new commit to the main branch.
+Test 1: 
+
+Push a new commit to the main branch.
 
 Pushing a commit to the main branch will update your repo in DockerHub, naviagting there and checking the most recent timestamp should show when you made that commit.
 
-Test 2: Check the GitHub actions workflow status.
+<br>
+
+Test 2: 
+
+Check the GitHub actions workflow status.
 
 Looking at the Actions tab inside your github repository should display a green checkmark next to the latest workflow run. If a red X appear something has gone wrong and your workflow is probably not configured correctly.
 
