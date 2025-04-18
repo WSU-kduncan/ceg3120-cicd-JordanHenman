@@ -163,7 +163,7 @@ DOCKER_USERNAME
 
 DOCKER_TOKEN
 
-**Enter your PAT that you previously created.*
+*Enter your PAT that you previously created.*
 
 Resource I used for creating secrets: [https://docs.github.com/en/actions/security-guides/encrypted-secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 
