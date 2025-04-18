@@ -245,8 +245,18 @@ The main goal of this project was to set up an automated Continous Integration p
 
 The tools we used to complete our goals are as follows:
 
-- GitHub Actions - Use to
-- Docker
-- DockerHub
-- Git
+- Angular - Used to build a dynamic web application.
+- GitHub Actions - Used to automate workflow steps such as building and pushing Docker images.
+- Personal Access Tokens - Used to authenticate to services without using a password.
+- Docker File - Used to automatically create Docker images.
+- Docker Desktop - Used to containerize our angular application.
+- DockerHub - Used to host our Docker images.
+- Git - Used to track code changes.
 
+### Diagramming
+
+
+
+### Resources
+
+The resources I used are scattered throughout my document.
