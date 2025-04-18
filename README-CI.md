@@ -245,10 +245,7 @@ The main goal of this project was to set up an automated Continous Integration p
 
 The tools we used to complete our goals are as follows:
 
-- GitHub Actions
-
-   Used to
-  
+- GitHub Actions - Use to
 - Docker
 - DockerHub
 - Git
