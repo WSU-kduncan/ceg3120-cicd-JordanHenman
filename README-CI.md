@@ -189,5 +189,38 @@ For example my workflow file:
 
 Link to my workflow: [https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/docker-publish.yml](https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/docker-publish.yml)
 
+The resource I used to generate this workflow was ChatGPT, I provided the following prompt "Set up a GitHub Actions workflow to build and push container images to your DockerHub repository, workflow should trigger when a commit is pushed to the main branch, workflow should utilize repository secrets for authentication, workflow should utilize actions as opposed to run commands."
+
+Another resource I used: [https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
+
+<br>
+
+There is several ways to test if your workflow is valid and working correctly.
+
+Test 1: Push a new commit to the main branch.
+
+Pushing a commit to the main branch will update your repo in DockerHub, naviagting there and checking the most recent timestamp should show when you made that commit.
+
+Test 2: Check the GitHub actions workflow status.
+
+Looking at the Actions tab inside your github repository should display a green checkmark next to the latest workflow run. If a red X appear something has gone wrong and your workflow is probably not configured correctly.
+
+<br>
+
+After testing if the workflow is correct you can test the image to see if everything is correct on the DockerHub side.
+
+You can start and run your image with the following commands:
+
+        docker pull your-dockerhub-username/your-repo-name:latest
+
+        docker run -p 8080:80 your-dockerhub-username/your-repo-name:latest
+
+*Make sure to replace your-dockerhub-username/your-repo-name with your username and repo information.*
+
+With these command completed you should be able to open any web browser and naviage to [http://localhost:8080](http://localhost:8080).
+
+There you should see your application running.
+
+Resource I used for workflow testing: [https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflow-runs](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflow-runs)
 
 # Part 3
