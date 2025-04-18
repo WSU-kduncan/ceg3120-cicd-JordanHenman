@@ -8,7 +8,7 @@ WORKDIR /app
 RUN npm install -g @angular/cli
 
 # Copying the site files
-COPY angular-site/ /app
+COPY angular-site/app
 
 # Installing dependencies
 RUN npm install
