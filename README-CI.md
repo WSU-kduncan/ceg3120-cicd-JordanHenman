@@ -77,7 +77,7 @@ The following is my example Dockerfile that I used to create a container similar
 
         WORKDIR /app
 
-        COPY angular-site/ .
+        COPY angular-site /app
 
         RUN npm install
 
