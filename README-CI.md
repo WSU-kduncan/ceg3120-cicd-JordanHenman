@@ -161,6 +161,8 @@ Two secrets need created to successfully authenticate with DockerHub.
         
         *Enter your username for DockerHub.*
 
+
+
         DOCKER_TOKEN
         
         *Enter your PAT that you previously created.*
