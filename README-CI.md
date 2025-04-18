@@ -149,6 +149,8 @@ The resource I used for command line login was: [https://docs.docker.com/engine/
 
 ### Creating & Using Repository Secrets
 
+Secrets are encrypted environment variables that can be stored in your GitHub repo. These act as credentials you can use to authenticate into other services.
+
 1. Navigate to your Github Repo.
 2. Go to Settings, Secrets and variables, and select Actions.
 3. Click "New repository secret".
@@ -165,6 +167,21 @@ DOCKER_TOKEN
 
 <br>
 
-### Workflow Creation
+### Workflow Creation & Testing
+
+A workflow is a file writted in YAML that essential tells GitHub to execute a task when something occurs.
+
+For example my workflow file:
+1. Runs everytime code is pushed to the main branch.
+2. Creates a job titled "build-and-push".
+3. Runs Ubuntu on a virtual machine.
+4. Pulls the latest code from the repo to use as a Docker image.
+5. Logs into my DockerHub account using my previously created secrets.
+6. Creates an environment using Buildx.
+7. Builds the Docker image from my project repo.
+8. Pushes the built image to DockerHub.
+
+Link to my workflow: [https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/docker-publish.yml](https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/docker-publish.yml)
+
 
 # Part 3
