@@ -173,7 +173,7 @@ Resource I used for creating secrets: [https://docs.github.com/en/actions/securi
 
 <br>
 
-### Workflow Creation & Testing
+### Workflow Creation
 
 A workflow is a file writted in YAML that essential tells GitHub to execute a task when something occurs.
 
@@ -194,6 +194,8 @@ The resource I used to generate this workflow was ChatGPT, I provided the follow
 Another resource I used: [https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 
 <br>
+
+### Workflow Testing
 
 There is several ways to test if your workflow is valid and working correctly.
 
@@ -216,6 +218,8 @@ You can start and run your image with the following commands:
         docker run -p 8080:80 your-dockerhub-username/your-repo-name:latest
 
 *Make sure to replace your-dockerhub-username/your-repo-name with your username and repo information.*
+
+<br>
 
 With these command completed you should be able to open any web browser and naviage to [http://localhost:8080](http://localhost:8080).
 
