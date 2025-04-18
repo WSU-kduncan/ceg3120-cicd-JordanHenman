@@ -187,6 +187,8 @@ For example my workflow file:
 7. Builds the Docker image from my project repo.
 8. Pushes the built image to DockerHub.
 
+<br>
+
 Link to my workflow: [https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/docker-publish.yml](https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/docker-publish.yml)
 
 The resource I used to generate this workflow was ChatGPT, I provided the following prompt "Set up a GitHub Actions workflow to build and push container images to your DockerHub repository, workflow should trigger when a commit is pushed to the main branch, workflow should utilize repository secrets for authentication, workflow should utilize actions as opposed to run commands."
@@ -230,6 +232,8 @@ You can start and run your image with the following commands:
 With these command completed you should be able to open any web browser and naviage to [http://localhost:8080](http://localhost:8080).
 
 There you should see your application running.
+
+<br>
 
 Resource I used for workflow testing: [https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflow-runs](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflow-runs)
 
