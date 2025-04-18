@@ -235,7 +235,7 @@ There you should see your application running.
 
 <br>
 
-![bird.PNG](bird.PNG)
+![bird.PNG](images/bird.PNG)
 
 Resource I used for workflow testing: [https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflow-runs](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflow-runs)
 
