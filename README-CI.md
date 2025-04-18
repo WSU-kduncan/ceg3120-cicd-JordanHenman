@@ -157,13 +157,13 @@ Secrets are encrypted environment variables that can be stored in your GitHub re
 
 Two secrets need created to successfully authenticate with DockerHub.
 
-DOCKER_USERNAME
+        DOCKER_USERNAME
+        
+        *Enter your username for DockerHub.*
 
-*Enter your username for DockerHub.*
-
-DOCKER_TOKEN
-
-*Enter your PAT that you previously created.*
+        DOCKER_TOKEN
+        
+        *Enter your PAT that you previously created.*
 
 Resource I used for creating secrets: [https://docs.github.com/en/actions/security-guides/encrypted-secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 
