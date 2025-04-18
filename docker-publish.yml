@@ -30,4 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/your-repo-name:latest
+          tags: jordanhenman/henman-ceg3120:latest
