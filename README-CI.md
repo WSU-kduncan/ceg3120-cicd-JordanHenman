@@ -257,7 +257,7 @@ The tools we used to complete our goals are as follows:
 
 ### Diagramming
 
-![diagram.png](images/diagram.png)
+![diagram.png](images/diagram.PNG)
 
 <br>
 
