@@ -223,13 +223,13 @@ You can start and run your image with the following commands:
 
         docker pull your-dockerhub-username/your-repo-name:latest
 
-        docker run -t-p 8080:80 your-dockerhub-username/your-repo-name:latest
+        docker run -t-p 4200:4200 your-dockerhub-username/your-repo-name:latest
 
 *Make sure to replace your-dockerhub-username/your-repo-name with your username and repo information.*
 
 <br>
 
-With these command completed you should be able to open any web browser and naviage to [http://localhost:8080](http://localhost:8080).
+With these command completed you should be able to open any web browser and naviage to [http://localhost:4200](http://localhost:4200).
 
 There you should see your application running.
 
