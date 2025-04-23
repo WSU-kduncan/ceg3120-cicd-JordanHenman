@@ -37,6 +37,23 @@ The flow is as follows:
 4. Builds the Docker image.
 5. Lastly, pushes the image with latest, major, and major.minor tags.
 
+<br>
+
+### Testing our Work
+
+The easiest way to test our process is to simply follow the previously listed steps. For instance, I did the following:
+
+* Used the command - git tag -a v1.1.1 -m "Test"
+* Pushed the tag with - git push origin v1.1.1
+* Pushed the repository to Github
+* Checked the Actions tab to ensure that no errors occured.
+* Pulled the Docker image using docker pull - jordanhenman/henman-ceg3120:1.1.1
+* Finally ran the image to ensure that it works correctly - docker run jordanhenman/henman-ceg3120:1.1.1
+
+If everything is working correctly then there should be no errors throughout all these steps and the image should run successfully.
+
+<br>
+
 # Part 2
 
 
