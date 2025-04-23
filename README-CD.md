@@ -69,6 +69,12 @@ Several changes had to be made to my previous workflow version to get this flow 
 
 <br>
 
+The only change that needs made if using another repo would be to change the images: jordanhenman/henman-ceg3120 to your DockerHub repo name.
+
+        images: (insert Docker repo here)
+
+<br>
+
 Link to my workflow: [https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/.github/workflows/docker-publish.yml](https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/.github/workflows/docker-publish.yml)
 
 <br>
