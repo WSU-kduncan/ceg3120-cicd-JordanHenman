@@ -43,7 +43,7 @@ Several changes had to be made to my previous workflow version to get this flow 
 
 * All the code involved in pushing the image whenever the repo was pushed was removed.
 
-    *I didn't save the code I removed that was used to push on Github push so just imagine that's here.*
+    *I didn't save the code I removed that was used to push the Docker image on Github push so just imagine that's here.*
   
 * Code was added that extracted the metadata from the tag to be inserted into Docker.
 
