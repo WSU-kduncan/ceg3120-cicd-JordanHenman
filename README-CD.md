@@ -37,6 +37,8 @@ The flow is as follows:
 4. Builds the Docker image.
 5. Lastly, pushes the image with latest, major, and major.minor tags.
 
+Link to my workflow: [https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/.github/workflows/docker-publish.yml](https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/.github/workflows/docker-publish.yml)
+
 <br>
 
 ### Testing 
