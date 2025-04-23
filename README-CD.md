@@ -37,6 +37,38 @@ The flow is as follows:
 4. Builds the Docker image.
 5. Lastly, pushes the image with latest, major, and major.minor tags.
 
+<br>
+
+Several changes had to be made to my previous workflow version to get this flow to work properly. 
+
+* All the code involved in pushing the image whenever the repo was pushed was removed.
+
+    * I didn't save the code I removed that was used to push on Github push so just imagine that's here. *
+  
+* Code was added that extracted the metadata from the tag to be inserted into Docker.
+
+      - name: Extract metadata for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: jordanhenman/henman-ceg3120
+          tags: |
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
+            type=raw,value=latest
+  
+* Build and push Docker image was updated to tag the image with the metadata.
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+
+<br>
+
 Link to my workflow: [https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/.github/workflows/docker-publish.yml](https://github.com/WSU-kduncan/ceg3120-cicd-JordanHenman/blob/main/.github/workflows/docker-publish.yml)
 
 <br>
