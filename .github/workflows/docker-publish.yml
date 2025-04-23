@@ -19,7 +19,7 @@ jobs:
 
       - name: Extracting metadata for Docker
         id: meta
-        uses: docker/meta/data-action@v5
+        uses: docker/metadata-action@v5
         with:
           images: jordanhenman/henman-ceg3120
           tags: |
