@@ -39,7 +39,7 @@ The flow is as follows:
 
 <br>
 
-### Testing our Work
+### Testing 
 
 The easiest way to test our process is to simply follow the previously listed steps. For instance, I did the following:
 
