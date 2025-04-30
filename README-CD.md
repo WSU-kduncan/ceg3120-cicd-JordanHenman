@@ -158,6 +158,35 @@ This bash script needs to be executable for it to properly function.
 
 ### Installing & Configuring Webhooks
 
+Webhook needs installed on the EC2 instance.
+
+    sudo apt instal webhook
+
+Next a .json file needs configured to create a hook definition.
+
+    [
+      {
+        "id": "deploy-container",
+        "execute-command": "/home/ec2-user/deployment/refresh-container.sh",
+        "command-working-directory": "/home/ec2-user",
+        "pass-arguments-to-command": [],
+        "trigger-rule": {
+          "match": {
+            "type": "value",
+            "value": "your-shared-secret",
+            "parameter": {
+              "source": "header",
+              "name": "X-Hub-Signature"
+            }
+          }
+        }
+      }
+    ]
+
+Lastly the webhook needs to be ran:
+
+    webhook -hooks /home/ec2-user/deployment/hooks.json -port 9000
+
 
 
 # Part 3
