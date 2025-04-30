@@ -1,0 +1,18 @@
+[
+  {
+    "id": "deploy-container",
+    "execute-command": "/home/ec2-user/deployment/refresh-container.sh",
+    "command-working-directory": "/home/ec2-user",
+    "pass-arguments-to-command": [],
+    "trigger-rule": {
+      "match": {
+        "type": "value",
+        "value": "your-shared-secret",
+        "parameter": {
+          "source": "header",
+          "name": "X-Hub-Signature"
+        }
+      }
+    }
+  }
+]
