@@ -96,7 +96,16 @@ If everything is working correctly then there should be no errors throughout all
 
 # Part 2
 
+### EC2 Instance Details
 
+* Instance Type: t2.medium with 2 CPU cores and 4 GB RAM.
+* Volume Size: 30 GB.
+
+### Installing & Testing Docker
+
+### Bash Scripting
+
+### Installing & Configuring Webhooks
 
 # Part 3
 
