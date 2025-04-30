@@ -142,7 +142,23 @@ If everything is configured correctly you should see your website in HTML using:
 
 ### Bash Scripting
 
+A bash script needs created that will refresh the Docker image.
+
+    #!/bin/bash
+    CONTAINER_NAME=my-angular-app
+    IMAGE=your-dockerhub-username/your-image-name:latest
+    
+    docker pull $IMAGE
+    docker stop $CONTAINER_NAME && docker rm $CONTAINER_NAME
+    docker run -d --name $CONTAINER_NAME -p 80:80 $IMAGE
+
+This bash script needs to be executable for it to properly function.
+
+    chmod +x refresh-container.sh
+
 ### Installing & Configuring Webhooks
+
+
 
 # Part 3
 
