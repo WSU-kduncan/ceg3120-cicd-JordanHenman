@@ -98,10 +98,47 @@ If everything is working correctly then there should be no errors throughout all
 
 ### EC2 Instance Details
 
+The following is the specs I used when creating my EC2 instance:
+
 * Instance Type: t2.medium with 2 CPU cores and 4 GB RAM.
 * Volume Size: 30 GB.
+* AMI: Ubuntu 20.04 LTS
+
+My security group configuration is as follows:
+
+* Inbound traffic on:
+    * Port 22 - SSH
+    * Port 80 - App
+    * Port 9000 - Webhook 
+* Outbound traffic on:
+    * All ports 
+
+<br>
 
 ### Installing & Testing Docker
+
+Installing Docker on your EC2 is extremely easy.
+
+    sudo apt update
+    sudo apt install -y docker.io
+    sudo systemctl start docker
+    sudo usermod -aG docker $USER
+
+You can confirm docker successfully installed with this command:
+
+    docker --version
+    docker run hello-word
+
+You can double check that docker is configured correctly by running your current Docker image from DockerHub.
+
+    docker pull (your dockerhub username)/(image name):latest
+    docker run -d -p 80:80 (your dockerhub username)/(image name):latest
+
+If everything is configured correctly you should see your website in HTML using:
+
+    curl localhost
+
+<br>
 
 ### Bash Scripting
 
