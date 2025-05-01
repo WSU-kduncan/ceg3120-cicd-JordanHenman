@@ -2,7 +2,7 @@
   {
     "id": "deploy",
     "execute-command": "/home/ubuntu/deployment/deploy.sh",
-    "command-working-directory": "/home/ubuntu/deployment",
+    "command-working-directory": "/home/ubuntu/",
     "response-message": "Deployment triggered.",
     "trigger-rule": {
       "match": {
