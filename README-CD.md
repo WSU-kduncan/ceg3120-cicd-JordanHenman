@@ -173,7 +173,7 @@ Next a .json file needs configured to create a hook definition.
         "trigger-rule": {
           "match": {
             "type": "value",
-            "value": "your-shared-secret",
+            "value": "supersecret",
             "parameter": {
               "source": "header",
               "name": "X-Hub-Signature"
@@ -185,8 +185,51 @@ Next a .json file needs configured to create a hook definition.
 
 Lastly the webhook needs to be ran:
 
-    webhook -hooks /home/ec2-user/deployment/hooks.json -port 9000
+    webhook -hooks /home/ubuntu/deployment/hooks.json -port 9000
 
+To test if your webhook is working successfully you can run the following command:
+
+    curl -H "X-Hub-Secret: (Insert your secret)" http://(EC2 IP):9000/hooks/deploy
+
+Once this is done you must configure your GitHub repository with a webhook by going into your repo settings and selecting webhooks.
+
+You must enter the payload URL:
+
+    http://(EC2 IP):9000/hooks/deploy
+
+Your choosen secret:
+
+    X-Hub-Secret: (Insert your secret)
+
+And lastly choose when this webhook should be activated, I choose on tag creation.
+
+<br>
+
+### Autostarting Your Webhook
+
+The final configuration your EC2 machine needs is a service file used to autostart webhook whenever the instance is turned on.
+
+An example of my service file is as shown:
+
+    [Unit]
+    Description=Webhook Listener
+    After=network.target
+    
+    [Service]
+    ExecStart=/usr/local/bin/webhook -hooks /home/ubuntu/deployment/hooks.json -port 9000 -verbose
+    Restart=always
+    User=ec2-user
+    
+    [Install]
+    WantedBy=multi-user.target
+
+Next the service file needs configured to run on EC2 start:
+    
+    sudo cp deployment/webhook.service /etc/systemd/system/
+    sudo systemctl daemon-reexec
+    sudo systemctl daemon-reload
+    sudo systemctl enable webhook
+    sudo systemctl start webhook
 
 
 # Part 3
