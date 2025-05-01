@@ -1,16 +1,16 @@
 [
   {
-    "id": "deploy-container",
-    "execute-command": "/home/ec2-user/deployment/refresh-container.sh",
-    "command-working-directory": "/home/ec2-user",
-    "pass-arguments-to-command": [],
+    "id": "deploy",
+    "execute-command": "/home/ec2-user/deployment/deploy.sh",
+    "command-working-directory": "/home/ec2-user/deployment",
+    "response-message": "Deployment triggered.",
     "trigger-rule": {
       "match": {
         "type": "value",
-        "value": "your-shared-secret",
+        "value": "supersecret",
         "parameter": {
           "source": "header",
-          "name": "X-Hub-Signature"
+          "name": "X-Hub-Secret"
         }
       }
     }
