@@ -4,15 +4,5 @@
     "execute-command": "/home/ubuntu/deployment/deploy.sh",
     "command-working-directory": "/home/ubuntu/",
     "response-message": "Deployment triggered.",
-    "trigger-rule": {
-      "match": {
-        "type": "value",
-        "value": "supersecret",
-        "parameter": {
-          "source": "header",
-          "name": "X-Hub-Secret"
-        }
-      }
-    }
   }
 ]
