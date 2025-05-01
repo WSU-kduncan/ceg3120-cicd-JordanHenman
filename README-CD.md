@@ -241,7 +241,7 @@ Next the service file needs configured to run on EC2 start:
 
 ### Project Goal
 
-** Goal stated before Part 1 **
+* Goal stated before Part 1 *
 
 ### Tools Used
 
