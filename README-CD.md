@@ -232,8 +232,8 @@ Next the service file needs configured to run on EC2 start:
     sudo cp deployment/webhook.service /etc/systemd/system/
     sudo systemctl daemon-reexec
     sudo systemctl daemon-reload
-    sudo systemctl enable webhook
-    sudo systemctl start webhook
+    sudo systemctl enable webhook.service
+    sudo systemctl start webhook.service
 
 <br>
 
