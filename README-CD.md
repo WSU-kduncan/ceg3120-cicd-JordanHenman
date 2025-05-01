@@ -237,7 +237,7 @@ Next the service file needs configured to run on EC2 start:
 
 <br>
 
-![bird](images/bird.PNG)
+![bird](images/bird.png)
 
 # Part 3
 
