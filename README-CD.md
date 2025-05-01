@@ -171,8 +171,8 @@ Next a .json file needs configured to create a hook definition.
     [
       {
         "id": "deploy-container",
-        "execute-command": "/home/ec2-user/deployment/refresh-container.sh",
-        "command-working-directory": "/home/ec2-user",
+        "execute-command": "/home/ubuntu/deployment/refresh-container.sh",
+        "command-working-directory": "/home/ubuntu/deployment",
         "pass-arguments-to-command": [],
         "trigger-rule": {
           "match": {
