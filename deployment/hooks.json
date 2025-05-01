@@ -1,8 +1,8 @@
 [
   {
     "id": "deploy",
-    "execute-command": "/home/ec2-user/deployment/deploy.sh",
-    "command-working-directory": "/home/ec2-user/deployment",
+    "execute-command": "/home/ubuntu/deployment/deploy.sh",
+    "command-working-directory": "/home/ubuntu/deployment",
     "response-message": "Deployment triggered.",
     "trigger-rule": {
       "match": {
