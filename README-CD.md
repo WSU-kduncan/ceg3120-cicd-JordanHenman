@@ -1,3 +1,7 @@
+# Continuous Deployment
+
+The goal of this project is to implement a fully automated deployement pipeline where pushing new code to GitHub creates a newly tagged Docker image which is deployed automatically to a live server.
+
 # Part 1
 
 ## Using Tags
@@ -231,7 +235,28 @@ Next the service file needs configured to run on EC2 start:
     sudo systemctl enable webhook
     sudo systemctl start webhook
 
+<br>
 
 # Part 3
+
+### Project Goal
+
+** Goal stated before Part 1 **
+
+### Tools Used
+
+Tools Used:
+* GitHub
+* Docker
+* DockerHub
+* EC2 Instance
+* Webhook
+
+### Project Diagram
+
+
+
+### Resources
+
 
 
