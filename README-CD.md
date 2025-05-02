@@ -262,4 +262,8 @@ Tools Used:
 
 * [https://github.com/adnanh/webhook](https://github.com/adnanh/webhook)
 * [https://docs.github.com/en/actions](https://docs.github.com/en/actions)
+* [https://github.com/docker/build-push-action](https://github.com/docker/build-push-action)
+* [https://github.com/docker/metadata-action](https://github.com/docker/metadata-action)
+* [https://git-scm.com/book/en/v2/Git-Basics-Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+* [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
